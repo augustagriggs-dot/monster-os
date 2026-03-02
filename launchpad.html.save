@@ -1,0 +1,16 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <!DOCTYPE html><html><head><style>
+body{margin:0;background:#050505;color:#fff;font-family:sans-serif;overflow-x:hidden;}
+.h{height:8vh;display:flex;align-items:center;padding-left:4%;font-size:4vh;font-weight:900;color:#e50914;}
+.c{padding:20px 4% 10px;font-size:2vh;font-weight:bold;border-left:5px solid #e50914;margin-left:4%;text-transform:uppercase;color:#aaa;}
+.g{display:grid;grid-template-columns:repeat(6,1fr);gap:15px;padding:0 4% 20px;}
+.b{position:relative;background:#141414;border-radius:6px;overflow:hidden;transition:0.4s;aspect-ratio:2/3;text-decoration:none;color:#fff;display:block;}
+.b:hover{transform:scale(1.1);z-index:10;box-shadow:0 0 25px #e50914;outline:2px solid #fff;}
+.b img{width:100%;height:100%;object-fit:cover;opacity:.7;}
+.b div{position:absolute;bottom:0;width:100%;padding:10px 0;background:linear-gradient(transparent,rgba(0,0,0,.9));font-size:1.2vh;text-align:center;font-weight:bold;}
+</style></head><body><div class="h">MONSTER LAW TV</div>
+<div class="c">Primary Legal Arsenal</div><div class="g" id="l1"></div>
+<div class="c">Legal Research & AI</div><div class="g" id="l2"></div>
+<div class="c">Movies & Entertainment</div><div class="g" id="m"></div>
+<script>
+const add=(id,n,u,i)=>{document.getElementById(id).innerHTML+=`<a href="${u}" class="b"><img src="${i}"><div>${n}</div></a>`;};
+const L="https://images.unsplash.com/photo-";

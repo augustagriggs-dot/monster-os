@@ -1,0 +1,55 @@
+<!DOCTYPE html><html><head><style>
+body{margin:0;background:#050505;color:#fff;font-family:sans-serif;overflow-x:hidden;}
+.h{height:8vh;display:flex;align-items:center;padding-left:4%;font-size:4vh;font-weight:900;color:#e50914;}
+.c{padding:20px 4% 10px;font-size:2vh;font-weight:bold;border-left:5px solid #e50914;margin-left:4%;text-transform:uppercase;color:#aaa;}
+.g{display:grid;grid-template-columns:repeat(5,1fr);gap:15px;padding:0 4% 20px;}
+.b{position:relative;background:#141414;border-radius:6px;overflow:hidden;transition:0.4s;aspect-ratio:2/3;text-decoration:none;color:#fff;display:block;}
+.b:hover{transform:scale(1.1);z-index:10;box-shadow:0 0 25px #e50914;outline:2px solid #fff;}
+.b img{width:100%;height:100%;object-fit:cover;opacity:.7;}
+.b div{position:absolute;bottom:0;width:100%;padding:10px 0;background:linear-gradient(transparent,rgba(0,0,0,.9));font-size:1.2vh;text-align:center;font-weight:bold;}
+</style></head><body><div class="h">MONSTER LAW TV</div>
+
+<div class="c">Primary Legal Arsenal</div><div class="g" id="l1"></div>
+<div class="c">Legal Research & AI</div><div class="g" id="l2"></div>
+<div class="c">Movies & Entertainment</div><div class="g" id="m"></div>
+
+<script>
+const add=(id,n,u,i)=>{document.getElementById(id).innerHTML+=`<a href="${u}" class="b"><img src="${i}"><div>${n}</div></a>`;};
+const L="https://images.unsplash.com/photo-";
+
+// ROW 1: PRIMARY LEGAL (10 BLOCKS)
+add("l1","WESTLAW","https://legal.thomsonreuters.com",L+"1505664194779?w=300");
+add("l1","LEXIS","https://lexisnexis.com",L+"1521587760476?w=300");
+add("l1","NCBE","https://ncbex.org",L+"1589829545856?w=300");
+add("l1","SCHOLAR","https://scholar.google.com",L+"1450101499163?w=300");
+add("l1","CORNELL","https://law.cornell.edu",L+"1589994160839?w=300");
+add("l1","LAW.COM","https://law.com",L+"1555372840?w=300");
+add("l1","BLOOMBERG","https://pro.bloomberglaw.com",L+"1590204040114?w=300");
+add("l1","FASTCASE","https://fastcase.com",L+"1450101499163?w=300");
+add("l1","PACER","https://pacer.uscourts.gov",L+"1589270616113?w=300");
+add("l1","JUSTIA","https://justia.com",L+"1589390250682?w=300");
+
+// ROW 2: RESEARCH & AI (10 BLOCKS)
+add("l2","LISTENER","https://courtlistener.com",L+"1507679799987?w=300");
+add("l2","CONGRESS","https://congress.gov",L+"1523995442408?w=300");
+add("l2","ROBART AI","https://chatgpt.com",L+"1677442136019?w=300");
+add("l2","ABA JOURNAL","https://abajournal.com",L+"1589270616113?w=300");
+add("l2","FIND LAW","https://findlaw.com",L+"1427084323933?w=300");
+add("l2","CASETEXT","https://casetext.com",L+"1589390250682?w=300");
+add("l2","OYEZ","https://oyez.org",L+"1589829545856?w=300");
+add("l2","LAW360","https://law360.com",L+"1505664194779?w=300");
+add("l2","SCOTUSBLOG","https://scotusblog.com",L+"1521587760476?w=300");
+add("l2","HARVARD","https://hls.harvard.edu",L+"1589994160839?w=300");
+
+// ROW 3: MOVIES & ENTERTAINMENT (10 BLOCKS)
+add("m","LOOK MOVIE","https://lookmovie2.to",L+"1485846234645?w=300");
+add("m","CINEZONE","https://cinezone.to",L+"1536440136628?w=300");
+add("m","123MOVIES","https://123movies.com",L+"1594909122845?w=300");
+add("m","PLUTO TV","https://pluto.tv",L+"1593359677879?w=300");
+add("m","TUBI TV","https://tubitv.com",L+"1555372840?w=300");
+add("m","YOUTUBE","https://youtube.com",L+"1521302273984?w=300");
+add("m","GEMINI AI","https://gemini.google.com",L+"1675271591211?w=300");
+add("m","WEATHER","https://weather.com",L+"1592210454359?w=300");
+add("m","USA TODAY","https://usatoday.com",L+"1504715446734?w=300");
+add("m","EXIT","https://google.com",L+"1585822987233?w=300");
+</script></body></html>x

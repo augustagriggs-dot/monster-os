@@ -1,0 +1,58 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+ :root { --neon: #00ff00; --dark: #050505; }
+ body { 
+    background: var(--dark); color: #fff; font-family: sans-serif; 
+    margin: 0; padding: 10px; overflow: hidden; height: 100vh;
+    display: flex; flex-direction: column; align-items: center;
+ }
+ h1 { 
+    color: var(--neon); text-shadow: 0 0 20px var(--neon); 
+    font-size: 3vw; margin: 10px 0; text-transform: uppercase; letter-spacing: 5px;
+ }
+ .grid { 
+    display: grid; grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(4, 1fr);
+    gap: 15px; width: 95vw; height: 80vh; margin: auto; perspective: 1000px;
+ }
+ .tile { 
+    background: rgba(20, 20, 20, 0.9); border: 2px solid var(--neon); border-radius: 15px;
+    text-decoration: none; color: #fff; font-weight: bold; 
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    transition: 0.3s; box-shadow: 0 0 15px rgba(0,255,0,0.2);
+    font-size: 1.2vw;
+ }
+ .tile:hover { 
+    background: var(--neon); color: #000; 
+    transform: translateY(-10px) rotateX(5deg); 
+    box-shadow: 0 0 40px var(--neon); 
+ }
+ .icon { font-size: 2.5vw; margin-bottom: 5px; }
+ .upd { border-color: #ffcc00; color: #ffcc00; }
+<style>.glow-green{border:2px solid #00FF00;box-shadow:0 0 15px #00FF00;color:#00FF00;padding:10px;margin:5px;display:inline-block;text-decoration:none;font-weight:bold;border-radius:5px;text-shadow: 0 0 5px #00FF00; background: black;}</style>
+</style></head><body>
+ <h1>MONSTER MACHINE v1.0</h1>
+ <div class="grid">
+ <a href="https://vipleague.im" class="tile"><span class="icon">⚽</span>SPORTS</a>
+ <a href="https://tubitv.com/live" class="tile"><span class="icon">📺</span>TUBI TV</a>
+ <a href="https://sflix.to" class="tile"><span class="icon">🎥</span>MOVIES</a>
+ <a href="https://youtube.com" class="tile"><span class="icon">▶️</span>YOUTUBE</a>
+ <a href="https://google.com" class="tile"><span class="icon">🔍</span>GOOGLE</a>
+ <a href="https://chatgpt.com" class="tile"><span class="icon">🤖</span>CHATGPT</a>
+ <a href="https://gemini.google.com" class="tile"><span class="icon">✨</span>GEMINI</a>
+ <a href="https://mega.nz" class="tile"><span class="icon">☁️</span>STORAGE</a>
+ <a href="https://gmail.com" class="tile"><span class="icon">📧</span>GMAIL</a>
+ <a href="https://mail.yahoo.com" class="tile"><span class="icon">💜</span>YAHOO</a>
+ <a href="https://icloud.com" class="tile"><span class="icon">🍎</span>ICLOUD</a>
+ <a href="https://x.com" class="tile"><span class="icon">𝕏</span>X</a>
+ <a href="https://facebook.com" class="tile"><span class="icon">👥</span>FACEBOOK</a>
+ <a href="https://instagram.com" class="tile"><span class="icon">📸</span>INSTAGRAM</a>
+ <a href="https://tiktok.com" class="tile"><span class="icon">📱</span>TIKTOK</a>
+ <a href="https://spotify.com" class="tile"><span class="icon">🎵</span>SPOTIFY</a>
+ <a href="https://weather.com" class="tile"><span class="icon">🌤️</span>WEATHER</a>
+ <a href="https://news.google.com" class="tile"><span class="icon">📰</span>NEWS</a>
+ <a href="https://amazon.com" class="tile"><span class="icon">🛒</span>AMAZON</a>
+ <a href="https://github.com" class="tile upd"><span class="icon">⚙️</span>UPDATE</a>
+ </div>
+<div class='row' style='text-align:center; margin-top:20px;'><a href='https://cineby.gd' class='glow-green'>MOVIE 4</a><a href='https://m4uhd.tv' class='glow-green'>MOVIE 5</a><a href='https://fmoviesz.to' class='glow-green'>MOVIE 6</a><a href='https://lookmovie2.to' class='glow-green'>MOVIE 7</a><a href='https://123movies.net' class='glow-green'>MOVIE 8</a></div>
+</body></html>

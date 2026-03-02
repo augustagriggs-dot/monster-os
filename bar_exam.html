@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MONSTER BAR PREP - V1.5</title>
+    <style>
+        body { margin: 0; background: #000; color: white; font-family: sans-serif; overflow: hidden; }
+        .header { height: 8vh; display: flex; align-items: center; justify-content: center; font-size: 4vh; color: #00ffcc; text-shadow: 0 0 10px #00ffcc; }
+        .grid { display: grid; grid-template-columns: repeat(6, 1fr); grid-template-rows: repeat(5, 17vh); gap: 10px; padding: 10px; height: 90vh; }
+        .box { background: #111; border: 2px solid #333; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; border-radius: 8px; }
+        .box:hover { border-color: #00ffcc; background: #222; transform: scale(1.02); }
+        .box.study { border-color: #00ffcc; } /* Highlight Study Blocks */
+        .box.ent { border-color: #ff0000; }   /* Highlight Ent Blocks */
+        .box img { height: 10vh; width: auto; margin-bottom: 5px; }
+        .box span { font-size: 1.6vh; font-weight: bold; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="header">BAR EXAM STUDY TERMINAL</div>
+    <div class="grid" id="grid"></div>
+    <script>
+        const links = [
+            /* ROW 1 & 2: THE BAR EXAM (Study Zone) */
+            {n:'ABA BAR PREP', u:'https://www.americanbar.org/groups/legal_education/resources/bar-exam-information/', c:'study'},
+            {n:'NCBE TOOLS', u:'https://www.ncbex.org/exam-prep/', c:'study'},
+            {n:'COURT LISTENER', u:'https://www.courtlistener.com/', c:'study'},
+            {n:'QUIZLET LAW', u:'https://quizlet.com/subject/bar-exam/', c:'study'},
+            {n:'CALI LESSONS', u:'https://www.cali.org/', c:'study'},
+            {n:'LEGAL SCHOLAR', u:'https://scholar.google.com/', c:'study'},
+            {n:'STATE RULES', u:'https://www.law.cornell.edu/states', c:'study'},
+            {n:'CASE TEXT', u:'https://casetext.com/', c:'study'},
+            {n:'FIND LAW', u:'https://www.findlaw.com/', c:'study'},
+            {n:'LAW REVIEW', u:'https://www.law.com/', c:'study'},
+            {n:'FREE MBE Qs', u:'https://www.mbetutorial.com/', c:'study'},
+            {n:'MPRE PREP', u:'https://www.ncbex.org/exams/mpre/', c:'study'},
+            
+            /* ROW 3: PRODUCTIVITY (AI/Research) */
+            {n:'ROBART (GPT)', u:'https://chatgpt.com', c:''},
+            {n:'GEMINI AI', u:'https://gemini.google.com', c:''},
+            {n:'WEATHER', u:'https://weather.com', c:''},
+            {n:'MAPS', u:'https://google.com/maps', c:''},
+            {n:'GOOGLE DRIVE', u:'https://drive.google.com', c:''},
+            {n:'OUTLOOK', u:'https://outlook.live.com', c:''},
+
+            /* ROW 4 & 5: ENTERTAINMENT (The Reward) */
+            {n:'MOVIES', u:'https://lookmovie2.to', c:'ent'},
+            {n:'SPORTS', u:'https://streameast.to', c:'ent'},
+            {n:'YOUTUBE', u:'https://youtube.com', c:'ent'},
+            {n:'LIVE TV', u:'https://daddylive.sx', c:'ent'},
+            {n:'FLIX HQ', u:'https://flixhq.to', c:'ent'},
+            {n:'MUSIC', u:'https://spotify.com', c:'ent'},
+            {n:'NETFLIX', u:'https://netflix.com', c:'ent'},
+            {n:'ROKU FREE', u:'https://therokuchannel.roku.com', c:'ent'},
+            {n:'PLEX', u:'https://plex.tv', c:'ent'},
+            {n:'TWITCH', u:'https://twitch.tv', c:'ent'},
+            {n:'REDDIT LAW', u:'https://reddit.com/r/LawSchool', c:'ent'},
+            {n:'TERMINAL EXIT', u:'#', c:'ent'}
+        ];
+        const grid = document.getElementById('grid');
+        links.forEach(l => {
+            grid.innerHTML += `<a href="${l.u}" class="box ${l.c}"><img src="https://placehold.co/400x600/222/0ff?text=${l.n}"><span>${l.n}</span></a>`;
+        });
+    </script>
+</body>
+</html>

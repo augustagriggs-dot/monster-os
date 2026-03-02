@@ -1,0 +1,349 @@
+127.0.0.1 - - [16/Jan/2026 21:27:07] code 404, message File not found
+127.0.0.1 - - [16/Jan/2026 21:27:07] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Jan/2026 21:27:11] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jan/2026 21:30:19] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [16/Jan/2026 21:33:03] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [16/Jan/2026 21:34:23] code 404, message File not found
+127.0.0.1 - - [16/Jan/2026 21:34:23] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Jan/2026 21:36:22] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jan/2026 21:36:22] code 404, message File not found
+127.0.0.1 - - [16/Jan/2026 21:36:22] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Jan/2026 21:36:23] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jan/2026 21:36:23] code 404, message File not found
+127.0.0.1 - - [16/Jan/2026 21:36:23] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Jan/2026 21:36:23] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jan/2026 21:36:24] code 404, message File not found
+127.0.0.1 - - [16/Jan/2026 21:36:24] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Jan/2026 21:36:24] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jan/2026 21:36:24] code 404, message File not found
+127.0.0.1 - - [16/Jan/2026 21:36:24] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Jan/2026 21:36:27] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jan/2026 21:36:27] code 404, message File not found
+127.0.0.1 - - [16/Jan/2026 21:36:27] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Jan/2026 21:36:28] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jan/2026 21:36:28] code 404, message File not found
+127.0.0.1 - - [16/Jan/2026 21:36:28] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Jan/2026 21:36:28] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [16/Jan/2026 21:40:58] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jan/2026 21:41:30] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jan/2026 21:41:30] code 404, message File not found
+127.0.0.1 - - [16/Jan/2026 21:41:30] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Jan/2026 21:41:31] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jan/2026 21:41:31] code 404, message File not found
+127.0.0.1 - - [16/Jan/2026 21:41:31] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Jan/2026 22:30:09] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jan/2026 22:30:09] code 404, message File not found
+127.0.0.1 - - [16/Jan/2026 22:30:09] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Jan/2026 22:30:12] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [16/Jan/2026 22:43:36] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jan/2026 22:43:37] code 404, message File not found
+127.0.0.1 - - [16/Jan/2026 22:43:37] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Jan/2026 22:43:37] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [16/Jan/2026 22:43:58] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jan/2026 22:43:59] code 404, message File not found
+127.0.0.1 - - [16/Jan/2026 22:43:59] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Jan/2026 23:01:09] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jan/2026 23:01:35] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [16/Jan/2026 23:01:42] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jan/2026 23:01:42] code 404, message File not found
+127.0.0.1 - - [16/Jan/2026 23:01:42] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Jan/2026 23:25:26] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jan/2026 23:25:27] code 404, message File not found
+127.0.0.1 - - [16/Jan/2026 23:25:27] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Jan/2026 23:36:47] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jan/2026 23:36:47] code 404, message File not found
+127.0.0.1 - - [16/Jan/2026 23:36:47] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Jan/2026 23:37:08] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [16/Jan/2026 23:37:09] code 404, message File not found
+127.0.0.1 - - [16/Jan/2026 23:37:09] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Jan/2026 23:47:37] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jan/2026 23:47:37] code 404, message File not found
+127.0.0.1 - - [16/Jan/2026 23:47:37] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Jan/2026 23:48:00] code 404, message File not found
+127.0.0.1 - - [16/Jan/2026 23:48:00] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Jan/2026 23:48:06] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jan/2026 23:48:07] code 404, message File not found
+127.0.0.1 - - [16/Jan/2026 23:48:07] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Jan/2026 23:58:48] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jan/2026 23:58:48] code 404, message File not found
+127.0.0.1 - - [16/Jan/2026 23:58:48] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Jan/2026 23:59:02] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jan/2026 23:59:03] code 404, message File not found
+127.0.0.1 - - [16/Jan/2026 23:59:03] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 00:05:04] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 00:05:04] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 00:05:16] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 00:05:17] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 00:05:17] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 00:05:31] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 00:05:31] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 00:05:31] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 00:16:05] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 00:16:05] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 00:16:05] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 00:16:21] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 00:16:21] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 00:16:21] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 00:16:31] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 00:16:31] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 00:16:37] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 00:16:38] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 00:16:38] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 00:26:44] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 00:26:44] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 00:26:44] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 00:26:50] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 00:26:53] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 00:26:55] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 00:26:56] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 00:27:01] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 00:27:02] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 00:33:12] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 00:33:13] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 00:33:13] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 00:33:14] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 00:33:15] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 00:33:21] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 00:33:21] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 00:33:21] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 00:36:34] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 00:36:34] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 00:36:34] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 00:36:35] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 00:36:37] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 00:36:37] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 00:36:37] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 00:36:42] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 00:36:43] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 00:36:43] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 00:36:43] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 00:36:44] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 00:36:44] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 00:37:06] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 00:37:06] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 00:37:06] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 00:37:13] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 00:37:14] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 00:37:14] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 00:38:23] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 00:38:24] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 00:38:24] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 00:39:22] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 00:44:40] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 00:44:41] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 00:44:42] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 00:44:42] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 00:58:25] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 00:58:32] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 00:58:33] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 00:58:39] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 00:58:40] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 00:58:40] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 00:58:41] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 00:58:41] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 00:58:41] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:09:13] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:09:27] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 01:09:28] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 01:09:35] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:09:35] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:09:35] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:17:35] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:17:35] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:17:35] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:17:38] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:17:39] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:17:39] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:17:52] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 01:17:58] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:17:58] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:17:58] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:18:00] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:18:00] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:18:00] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:22:35] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:22:41] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:22:41] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:22:41] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:27:38] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:27:38] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:27:38] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:27:43] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:27:43] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:27:43] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:27:59] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 01:28:05] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 01:31:35] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:31:36] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:31:36] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:31:43] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:31:43] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:31:43] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:31:44] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:31:44] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:31:44] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:31:44] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:31:44] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:31:44] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:31:49] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:31:49] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:31:49] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:31:58] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 01:32:04] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:32:04] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:32:04] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:37:15] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:37:15] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:37:15] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:37:22] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:37:22] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:37:22] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:37:28] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:37:28] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:37:28] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:37:29] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 01:37:30] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:37:30] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:37:30] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:37:30] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 01:37:31] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 01:37:31] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:37:31] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:37:31] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:37:31] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:37:31] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:37:31] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:37:32] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:37:32] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:37:32] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:37:37] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:37:37] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:37:37] "GET /favicon.ico HTTP/1.1" 404 -
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/usr/lib/python3.11/http/server.py", line 1309, in <module>
+    test(
+  File "/usr/lib/python3.11/http/server.py", line 1256, in test
+    with ServerClass(addr, HandlerClass) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.11/http/server.py", line 1303, in server_bind
+    return super().server_bind()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+127.0.0.1 - - [17/Jan/2026 01:51:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:51:58] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:51:58] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:52:53] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:52:53] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:52:55] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:53:05] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:53:06] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:53:06] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:54:17] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:54:17] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 01:54:52] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 01:54:53] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 01:54:53] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 02:02:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 02:02:55] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 02:02:55] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 02:03:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 02:03:10] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 02:03:10] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 02:03:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 02:03:24] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 02:03:25] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 02:03:25] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 02:03:25] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 02:03:25] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 02:03:25] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 02:03:26] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 02:03:26] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 02:03:26] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 02:03:26] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 02:03:26] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 02:03:26] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 02:03:26] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 02:03:26] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 02:03:26] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 02:03:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 02:03:27] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 02:03:27] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 02:03:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 12:00:48] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 12:00:49] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 12:00:49] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 12:01:03] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 12:01:03] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 12:01:22] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 12:01:47] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 12:01:47] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 12:01:47] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 12:06:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 12:06:02] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 12:06:02] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 12:06:12] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 12:06:12] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 12:08:30] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 12:08:31] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 12:08:31] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 12:08:41] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 12:08:41] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 12:08:50] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 12:08:51] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 12:08:51] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 12:09:12] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 12:09:12] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 12:09:12] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 12:10:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 12:10:59] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 12:10:59] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 12:11:14] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 12:11:14] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 12:11:24] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 12:11:24] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 12:11:24] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 12:16:29] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 12:16:30] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 12:16:30] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 12:16:40] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 12:16:40] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 12:27:38] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 12:27:39] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 12:27:39] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 12:27:47] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 12:27:47] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 12:28:03] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 13:21:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 13:21:48] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 13:21:48] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 13:22:07] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 13:22:07] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 13:22:25] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 13:22:26] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 13:22:26] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 13:22:27] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 13:22:27] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 13:22:27] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 13:23:32] "GET /launchpad.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2026 13:37:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 13:37:16] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 13:37:16] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 13:37:37] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 13:37:37] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 13:37:50] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 13:37:50] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 13:37:50] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 13:37:52] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 13:37:52] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 13:37:52] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2026 13:37:53] "GET /launchpad.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 13:37:53] code 404, message File not found
+127.0.0.1 - - [17/Jan/2026 13:37:53] "GET /favicon.ico HTTP/1.1" 404 -
