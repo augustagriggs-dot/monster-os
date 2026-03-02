@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Monster OS: Household Command</title>
+    <style>
+        body { background: radial-gradient(circle, #1a1a1a, #000); color: gold; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 20px; text-align: center; }
+        h1 { font-size: 3rem; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 10px; color: #fff; text-shadow: 0 0 10px gold; }
+        .section-title { font-size: 1.5rem; color: #fff; margin: 30px 0 10px; border-bottom: 2px solid gold; display: inline-block; padding: 0 50px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; padding: 20px; max-width: 1400px; margin: auto; }
+        .block { background: #222; border: 1px solid #444; padding: 20px; border-radius: 8px; color: #ddd; text-decoration: none; font-weight: bold; transition: 0.3s; display: flex; align-items: center; justify-content: center; height: 60px; text-align: center; }
+        .block:hover { background: gold; color: #000; transform: scale(1.05); border-color: #fff; box-shadow: 0 0 15px gold; }
+        .movies { border-left: 5px solid #e50914; }
+        .kids { border-left: 5px solid #ff69b4; }
+        .sports { border-left: 5px solid #32cd32; }
+        .daily { border-left: 5px solid #1877f2; }
+    </style>
+</head>
+<body>
+
+    <h1>🏠 MONSTER OS: HOUSEHOLD 🏠</h1>
+
+    <div class="section-title">🎬 FREE CINEMA & TV</div>
+    <div class="grid">
+        <a href="https://cineby.app" class="block movies">CINEBY</a>
+        <a href="https://braflix.video" class="block movies">BRAFLIX (No Ads)</a>
+        <a href="https://fboxz.to" class="block movies">FBOX (Movies/TV)</a>
+        <a href="https://hdtoday.tv" class="block movies">HD TODAY</a>
+        <a href="https://vidsrc.pm" class="block movies">VIDSRC (Library)</a>
+        <a href="https://pluto.tv" class="block movies">PLUTO TV</a>
+        <a href="https://tubitv.com" class="block movies">TUBI TV</a>
+        <a href="https://123movies.net" class="block movies">123 MOVIES</a>
+        <a href="https://lookmovie2.to" class="block movies">LOOKMOVIE 2</a>
+        <a href="https://sflix.to" class="block movies">S-FLIX</a><div class="section-title">🏴‍☠️ INSTANT TORRENT STREAMING</div>
+    <div class="grid">
+        <a href="https://webtor.io" class="block movies">WEBTOR.IO (Best)</a>
+        <a href="https://instant.io" class="block movies">INSTANT.IO</a>
+        <a href="https://seedr.cc" class="block movies">SEEDR.CC</a>
+        <a href="https://torrentgalaxy.to/streaming" class="block movies">TGX STREAMING</a>
+        <a href="https://stremio.com/web" class="block movies">STREMIO WEB</a>
+    </div>
+
+    <div class="section-title">🔍 TORRENT SEARCH</div>
+    <div class="grid">
+        <a href="https://thepiratebay.org" class="block daily">PIRATE BAY</a>
+        <a href="https://1337x.to" class="block daily">1337X</a>
+        <a href="https://yts.mx" class="block daily">YTS MOVIES</a>
+    </div>
+    </div>
+
+    <div class="section-title">🧸 KIDS & CARTOONS</div>
+    <div class="grid">
+        <a href="https://www.wcofun.tv" class="block kids">WCO CARTOONS</a>
+        <a href="https://www.kisscartoon.sh" class="block kids">KISS CARTOON</a>
+        <a href="https://pbskids.org" class="block kids">PBS KIDS</a>
+        <a href="https://www.nick.com" class="block kids">NICKELODEON</a>
+        <a href="https://www.disneynow.com" class="block kids">DISNEY NOW</a>
+        <a href="https://www.abcya.com" class="block kids">ABC YA (Games)</a>
+    </div>
+
+    <div class="section-title">🏆 LIVE SPORTS & UFC</div>
+    <div class="grid">
+        <a href="https://thestreameast.to" class="block sports">STREAMEAST</a>
+        <a href="https://methstreams.com" class="block sports">METH STREAMS</a>
+        <a href="https://vipleague.im" class="block sports">VIP LEAGUE</a>
+        <a href="https://nflbite.to" class="block sports">NFL BITE</a>
+        <a href="https://nbabite.to" class="block sports">NBA BITE</a>
+        <a href="https://sportshub.stream" class="block sports">SPORTS HUB</a>
+    </div>
+
+    <div class="section-title">📱 SOCIAL & EMAIL</div>
+    <div class="grid">
+        <a href="https://facebook.com" class="block daily">FACEBOOK</a>
+        <a href="https://instagram.com" class="block daily">INSTAGRAM</a>
+        <a href="https://youtube.com" class="block daily">YOUTUBE</a>
+        <a href="https://gmail.com" class="block daily">GMAIL</a>
+        <a href="https://outlook.live.com" class="block daily">OUTLOOK</a>
+        <a href="https://amazon.com" class="block daily">AMAZON</a>
+    </div>
+
+</body>
+</html>

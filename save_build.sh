@@ -1,0 +1,6 @@
+#!/bin/bash
+cd /home/theland/monster_system/
+git add .
+git commit -m "Update GOSTREAMER MONSTER OS: $(date)"
+git push origin main
+echo "🚀 Build Synced to GitHub!"
