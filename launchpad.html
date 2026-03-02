@@ -1,4 +1,89 @@
-<h2 style="color:white; font-family:sans-serif;">The Supreme Command: Official Statutes & Constitution</h2>
+<h2 style="color:white; font-family:sans-serif;">Trial Intelligence & Jury Research</h2>
+<div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 30px;">
+  
+  <a href="https://www.scotusblog.com/" style="text-decoration:none;">
+    <div style="width:140px; height:140px; background:#1a1a1a; border: 1px solid #d4af37; border-radius:15px; display:flex; align-items:center; justify-content:center; flex-direction:column;">
+      <span style="font-size:40px;">🏛️</span>
+      <b style="color:#d4af37; font-family:sans-serif;">SCOTUSblog</b>
+    </div>
+  </a>
+
+  <a href="https://www.courtlistener.com/recap/" style="text-decoration:none;">
+    <div style="width:140px; height:140px; background:#2c3e50; border-radius:15px; display:flex; align-items:center; justify-content:center; flex-direction:column;">
+      <span style="font-size:40px;">🔓</span>
+      <b style="color:white; font-family:sans-serif;">RECAP Search</b>
+    </div>
+  </a>
+
+  <a href="https://www.thejuryexpert.com/" style="text-decoration:none;">
+    <div style="width:140px; height:140px; background:#8e44ad; border-radius:15px; display:flex; align-items:center; justify-content:center; flex-direction:column;">
+      <span style="font-size:40px;">👥</span>
+      <b style="color:white; font-family:sans-serif;">Jury Expert</b>
+    </div>
+  </a>
+</div>
+
+<h2 style="color:white; font-family:sans-serif;">Official Rules & Procedure</h2>
+<div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 30px;">
+  
+  <a href="https://www.law.cornell.edu/rules/frcp" style="text-decoration:none;">
+    <div style="width:140px; height:140px; background:#27ae60; border-radius:15px; display:flex; align-items:center; justify-content:center; flex-direction:column;">
+      <span style="font-size:40px;">📏</span>
+      <b style="color:white; font-family:sans-serif;">Civil Proc.</b>
+    </div>
+  </a>
+
+  <a href="https://www.law.cornell.edu/rules/fre" style="text-decoration:none;">
+    <div style="width:140px; height:140px; background:#c0392b; border-radius:15px; display:flex; align-items:center; justify-content:center; flex-direction:column;">
+      <span style="font-size:40px;">⚖️</span>
+      <b style="color:white; font-family:sans-serif;">Evidence Rules</b>
+    </div>
+  </a>
+</div>
+
+<h2 style="color:white; font-family:sans-serif;">Free CLE & Law Streaming</h2>
+<div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 30px;">
+  
+  <a href="https://www.practisinglawinstitute.edu/free-programs" style="text-decoration:none;">
+    <div style="width:140px; height:140px; background:#2980b9; border-radius:15px; display:flex; align-items:center; justify-content:center; flex-direction:column;">
+      <span style="font-size:40px;">🎓</span>
+      <b style="color:white; font-family:sans-serif;">Free CLE</b>
+    </div>
+  </a>
+
+  <a href="https://www.lawfaremedia.org/" style="text-decoration:none;">
+    <div style="width:140px; height:140px; background:#34495e; border-radius:15px; display:flex; align-items:center; justify-content:center; flex-direction:column;">
+      <span style="font-size:40px;">🛡️</span>
+      <b style="color:white; font-family:sans-serif;">Lawfare</b>
+    </div>
+  </a>
+</div><div style="background: #1a1a1a; padding: 20px; border-radius: 15px; margin-bottom: 30px; border: 1px solid #444; text-align: center;">
+  <h3 style="color: #00d4ff; font-family: sans-serif; margin-bottom: 15px;">Global Legal Search</h3>
+  <input type="text" id="legalSearch" placeholder="Enter Case Name, Statute, or Keyword..." style="width: 60%; padding: 12px; border-radius: 5px; border: none; font-size: 16px;">
+  
+  <div style="margin-top: 15px;">
+    <button onclick="searchLaw('scholar')" style="padding: 10px 15px; cursor: pointer; background: #4285f4; color: white; border: none; border-radius: 5px; margin: 5px;">Google Scholar</button>
+    <button onclick="searchLaw('courtlistener')" style="padding: 10px 15px; cursor: pointer; background: #34495e; color: white; border: none; border-radius: 5px; margin: 5px;">CourtListener</button>
+    <button onclick="searchLaw('uscode')" style="padding: 10px 15px; cursor: pointer; background: #0d47a1; color: white; border: none; border-radius: 5px; margin: 5px;">U.S. Code</button>
+    <button onclick="searchLaw('findlaw')" style="padding: 10px 15px; cursor: pointer; background: #27ae60; color: white; border: none; border-radius: 5px; margin: 5px;">FindLaw</button>
+  </div>
+</div>
+
+<script>
+function searchLaw(platform) {
+  let query = document.getElementById('legalSearch').value;
+  if (!query) return alert("Please enter a search term.");
+  
+  let urls = {
+    'scholar': 'https://scholar.google.com/scholar?q=',
+    'courtlistener': 'https://www.courtlistener.com/?q=',
+    'uscode': 'https://uscode.house.gov/search/criteria.shtml?query=',
+    'findlaw': 'https://caselaw.findlaw.com/summary/search?query='
+  };
+  
+  window.open(urls[platform] + encodeURIComponent(query), '_blank');
+}
+</script><h2 style="color:white; font-family:sans-serif;">The Supreme Command: Official Statutes & Constitution</h2>
 <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 30px;">
   
   <a href="https://constitution.congress.gov/browse/" style="text-decoration:none;">
