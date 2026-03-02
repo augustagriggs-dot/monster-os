@@ -15,6 +15,18 @@
 ## 🎬 Cinematic Lounge
 * High-speed, no-storage streaming via **Cineby**, **BitCine**, and **Flix HQ**.
 * Live TV via **Pluto** and **Tubi**.
+# 🚀 GOSTREAMER MONSTER OS
+A high-tech, lightweight streaming interface for Raspberry Pi.
+
+### 🌟 Features:
+- **Neon Green Theme:** Custom CSS with hover effects.
+- **35+ Premium & Free Sites:** Direct links to Cinema, Sports, and Kids.
+- **Optimized for TV:** 80% zoom for perfect 1080p/4K viewing.
+- **Live Digital Clock:** Real-time JavaScript clock in the header.
+
+### 📂 File Structure:
+- `active_index.html`: The main dashboard.
+- `monster_system/`: System files and backup scripts.
 
 ---
 *Built for Privacy. Powered by Brave. 100% Legal Streaming.*
