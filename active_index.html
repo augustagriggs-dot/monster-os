@@ -18,48 +18,50 @@
         }
         .hdr h1 { color: var(--n); text-shadow: 0 0 15px var(--n); margin: 0; font-size: 2.2rem; }
         #clk { font-size: 1.6rem; color: var(--n); font-weight: bold; }
-        .search-container { text-align: center; margin-bottom: 40px; }
-        .search-bar { 
-            width: 50%; padding: 15px 25px; border-radius: 30px; border: 1px solid var(--n); 
-            background: #000; color: var(--n); font-size: 1.1rem; outline: none; 
-        }
         .rw { margin-bottom: 50px; }
         .rt { font-size: 1.3rem; color: #fff; margin-bottom: 15px; border-left: 5px solid var(--n); padding-left: 15px; font-weight: 800; text-transform: uppercase; }
         .tc { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+        
+        /* THE BLOCK */
         .t { 
             background: var(--card); border: 1px solid #222; border-radius: 12px; text-decoration: none; 
             display: flex; flex-direction: column; align-items: center; justify-content: center; 
-            padding: 20px; transition: 0.4s; aspect-ratio: 16 / 9; 
+            padding: 20px; transition: 0.4s; aspect-ratio: 16 / 9; overflow: hidden;
         }
         .t:hover { transform: scale(1.1); border-color: var(--n); box-shadow: 0 0 25px rgba(57, 255, 20, 0.4); z-index: 10; background: #000; }
+        
+        /* IMAGE AUTO-FIX: This ensures local images fit perfectly */
         .t img { 
-            max-width: 85%; max-height: 60px; object-fit: contain; 
+            max-width: 100%; max-height: 70px; object-fit: contain; 
             margin-bottom: 10px; filter: drop-shadow(0 0 5px #000); 
         }
+        
+        /* GHOST IMAGE PROTECTION: If an image is missing, show a neon border */
+        img[src=""], img:not([src]) { border: 1px dashed var(--n); width: 50px; height: 30px; }
+
         .t span { font-weight: bold; font-size: 0.8rem; text-transform: uppercase; color: var(--n); text-align: center; }
     </style>
 </head>
 <body>
     <div class="hdr"><h1>GOSTREAMER <span style="font-size:0.8rem; color:#fff;">MONSTER OS</span></h1><div id="clk">00:00:00</div></div>
-    <div class="search-container"><form action="https://duckduckgo.com/" method="get" target="_blank"><input type="text" name="q" class="search-bar" placeholder="SEARCH SYSTEM..."></form></div>
 
     <div class="rw">
         <div class="rt">🎬 Premium Cinema</div>
         <div class="tc">
             <a href="https://cineby.gd" class="t">
-                <img src="https://image.tmdb.org/t/p/w500/mBaXZ95O2YAnSsySZuS7S19H3RS.jpg">
+                <img src="img/poster1.jpg">
                 <span>Cineby HD</span>
             </a>
             <a href="https://hdtoday.tv" class="t">
-                <img src="https://image.tmdb.org/t/p/w500/29Msz9D76yyGPy4p9GBr9_MbiTM.jpg">
+                <img src="img/poster2.jpg">
                 <span>HD Today</span>
             </a>
             <a href="https://bflix.to" class="t">
-                <img src="https://image.tmdb.org/t/p/w500/7WsyChvnavnoUjs0oWpvuIqOS1x.jpg">
+                <img src="img/poster4.jpg">
                 <span>BFlix</span>
             </a>
             <a href="https://vumoo.to" class="t">
-                <img src="https://logo.clearbit.com/vudu.com">
+                <img src="img/poster3.jpg">
                 <span>Vumoo</span>
             </a>
         </div>
@@ -69,19 +71,19 @@
         <div class="rt">🏆 Live Sports</div>
         <div class="tc">
             <a href="https://thestreameast.to" class="t">
-                <img src="https://logo.clearbit.com/espn.com">
+                <img src="img/espn.png">
                 <span>StreamEast</span>
             </a>
             <a href="https://nflbite.to" class="t">
-                <img src="https://logo.clearbit.com/nfl.com">
+                <img src="img/nfl.png">
                 <span>NFL Bite</span>
             </a>
             <a href="https://nbabite.to" class="t">
-                <img src="https://logo.clearbit.com/nba.com">
+                <img src="img/nba.png">
                 <span>NBA Bite</span>
             </a>
             <a href="https://methstreams.com" class="t">
-                <img src="https://logo.clearbit.com/foxsports.com">
+                <img src="img/youtube.png">
                 <span>Meth Streams</span>
             </a>
         </div>
@@ -91,12 +93,8 @@
         <div class="rt">👶 Family & Kids</div>
         <div class="tc">
             <a href="https://pbskids.org" class="t">
-                <img src="https://logo.clearbit.com/pbs.org">
+                <img src="img/youtube.png">
                 <span>PBS Kids</span>
-            </a>
-            <a href="https://youtube.com/kids" class="t">
-                <img src="https://logo.clearbit.com/youtube.com">
-                <span>YT Kids</span>
             </a>
         </div>
     </div>
