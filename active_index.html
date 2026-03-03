@@ -21,25 +21,18 @@
         .rw { margin-bottom: 50px; }
         .rt { font-size: 1.3rem; color: #fff; margin-bottom: 15px; border-left: 5px solid var(--n); padding-left: 15px; font-weight: 800; text-transform: uppercase; }
         .tc { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
-        
-        /* THE BLOCK */
         .t { 
             background: var(--card); border: 1px solid #222; border-radius: 12px; text-decoration: none; 
             display: flex; flex-direction: column; align-items: center; justify-content: center; 
-            padding: 20px; transition: 0.4s; aspect-ratio: 16 / 9; overflow: hidden;
+            padding: 10px; transition: 0.4s; aspect-ratio: 16 / 9; overflow: hidden; position: relative;
         }
-        .t:hover { transform: scale(1.1); border-color: var(--n); box-shadow: 0 0 25px rgba(57, 255, 20, 0.4); z-index: 10; background: #000; }
-        
-        /* IMAGE AUTO-FIX: This ensures local images fit perfectly */
-        .t img { 
-            max-width: 100%; max-height: 70px; object-fit: contain; 
-            margin-bottom: 10px; filter: drop-shadow(0 0 5px #000); 
+        .t:hover { transform: scale(1.05); border-color: var(--n); box-shadow: 0 0 25px rgba(57, 255, 20, 0.4); z-index: 10; background: #000; }
+        .t img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; }
+        .t span { 
+            position: absolute; bottom: 8px; left: 8px; font-weight: bold; font-size: 0.7rem; 
+            text-transform: uppercase; color: #fff; background: rgba(0,0,0,0.8); 
+            padding: 2px 6px; border-radius: 4px; border-left: 3px solid var(--n);
         }
-        
-        /* GHOST IMAGE PROTECTION: If an image is missing, show a neon border */
-        img[src=""], img:not([src]) { border: 1px dashed var(--n); width: 50px; height: 30px; }
-
-        .t span { font-weight: bold; font-size: 0.8rem; text-transform: uppercase; color: var(--n); text-align: center; }
     </style>
 </head>
 <body>
@@ -48,54 +41,19 @@
     <div class="rw">
         <div class="rt">🎬 Premium Cinema</div>
         <div class="tc">
-            <a href="https://cineby.gd" class="t">
-                <img src="img/poster1.jpg">
-                <span>Cineby HD</span>
-            </a>
-            <a href="https://hdtoday.tv" class="t">
-                <img src="img/poster2.jpg">
-                <span>HD Today</span>
-            </a>
-            <a href="https://bflix.to" class="t">
-                <img src="img/poster4.jpg">
-                <span>BFlix</span>
-            </a>
-            <a href="https://vumoo.to" class="t">
-                <img src="img/poster3.jpg">
-                <span>Vumoo</span>
-            </a>
+            <a href="https://cineby.gd" class="t"><img src="img/poster1.jpg"><span>Cineby</span></a>
+            <a href="https://hdtoday.tv" class="t"><img src="img/poster2.jpg"><span>HD Today</span></a>
+            <a href="https://bflix.to" class="t"><img src="img/poster4.jpg"><span>BFlix</span></a>
+            <a href="https://vumoo.to" class="t"><img src="img/poster3.jpg"><span>Vumoo</span></a>
         </div>
     </div>
 
     <div class="rw">
         <div class="rt">🏆 Live Sports</div>
         <div class="tc">
-            <a href="https://thestreameast.to" class="t">
-                <img src="img/espn.png">
-                <span>StreamEast</span>
-            </a>
-            <a href="https://nflbite.to" class="t">
-                <img src="img/nfl.png">
-                <span>NFL Bite</span>
-            </a>
-            <a href="https://nbabite.to" class="t">
-                <img src="img/nba.png">
-                <span>NBA Bite</span>
-            </a>
-            <a href="https://methstreams.com" class="t">
-                <img src="img/youtube.png">
-                <span>Meth Streams</span>
-            </a>
-        </div>
-    </div>
-
-    <div class="rw">
-        <div class="rt">👶 Family & Kids</div>
-        <div class="tc">
-            <a href="https://pbskids.org" class="t">
-                <img src="img/youtube.png">
-                <span>PBS Kids</span>
-            </a>
+            <a href="https://thestreameast.to" class="t"><img src="img/espn.png" style="object-fit:contain;"><span>StreamEast</span></a>
+            <a href="https://nflbite.to" class="t"><img src="img/nfl.png" style="object-fit:contain;"><span>NFL Bite</span></a>
+            <a href="https://nbabite.to" class="t"><img src="img/nba.png" style="object-fit:contain;"><span>NBA Bite</span></a>
         </div>
     </div>
 
@@ -109,3 +67,4 @@
     </script>
 </body>
 </html>
+
