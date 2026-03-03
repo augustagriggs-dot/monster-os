@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOSTREAMER Monster OS</title>
+    <style>
+        :root { --n: #39FF14; --bg: #000; --card: #111; }
+        
+        body { 
+            background: radial-gradient(circle at top, #0a250a 0%, #000 85%) !important; 
+            background-color: #000 !important; color: #fff; font-family: 'Segoe UI', sans-serif; 
+            margin: 0; padding: 20px 40px; overflow-x: hidden;
+        }
+
+        /* HEADER & SEARCH */
+        .hdr { 
+            display: flex; justify-content: space-between; align-items: center; 
+            padding: 15px 0; border-bottom: 2px solid var(--n); 
+            margin-bottom: 30px; position: sticky; top: 0; background: rgba(0,0,0,0.9);
+            backdrop-filter: blur(10px); z-index: 1000;
+        }
+        .hdr h1 { color: var(--n); text-shadow: 0 0 15px var(--n); margin: 0; font-size: 2.2rem; letter-spacing: 2px; }
+        #clk { font-size: 1.6rem; color: var(--n); font-weight: bold; }
+        
+        .search-container { text-align: center; margin-bottom: 40px; }
+        .search-bar { 
+            width: 50%; padding: 15px 25px; border-radius: 30px; border: 1px solid var(--n); 
+            background: #000; color: var(--n); font-size: 1.1rem; outline: none; 
+            box-shadow: 0 0 15px rgba(57, 255, 20, 0.2);
+        }
+
+        /* ROW STYLING */
+        .rw { margin-bottom: 50px; }
+        .rt { font-size: 1.3rem; color: #fff; margin-bottom: 15px; border-left: 5px solid var(--n); padding-left: 15px; font-weight: 800; text-transform: uppercase; }
+        
+        /* GRID SYSTEM (UNIFORM BLOCKS) */
+        .tc { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+        
+        .t { 
+            background: var(--card); border: 1px solid #222; border-radius: 12px; text-decoration: none; 
+            display: flex; flex-direction: column; align-items: center; justify-content: center; 
+            padding: 20px; transition: 0.4s; aspect-ratio: 16 / 9; box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+        .t:hover { transform: scale(1.1); border-color: var(--n); box-shadow: 0 0 25px rgba(57, 255, 20, 0.4); z-index: 10; background: #000; }
+        
+        /* LOGO & POSTER STYLING */
+        .t img { max-width: 80%; max-height: 55px; object-fit: contain; margin-bottom: 10px; filter: drop-shadow(0 0 5px #000); }
+        .t span { font-weight: bold; font-size: 0.8rem; text-transform: uppercase; color: var(--n); text-align: center; }
+    </style>
+</head>
+<body>
+
+    <div class="hdr">
+        <h1>GOSTREAMER <span style="font-size:0.8rem; color:#fff;">MONSTER OS</span></h1>
+        <div id="clk">00:00:00</div>
+    </div>
+
+    <div class="search-container">
+        <form action="https://duckduckgo.com/" method="get" target="_blank">
+            <input type="text" name="q" class="search-bar" placeholder="SEARCH SYSTEM...">
+        </form>
+    </div>
+
+    <div class="rw">
+        <div class="rt">🎬 Premium Cinema</div>
+        <div class="tc">
+            <a href="https://cineby.gd" class="t"><img src="https://logo.clearbit.com/netflix.com"><img src="https://image.tmdb.org/t/p/w500/mBaXZ95O2YAnSsySZuS7S19H3RS.jpg"><span>Cineby HD</span></a>
+            <a href="https://hdtoday.tv" class="t"><img src="https://logo.clearbit.com/hulu.com"><img src="https://image.tmdb.org/t/p/w500/29Msz9D76yyGPy4p9GBr9_MbiTM.jpg"><span>HD Today</span></a>
+            <a href="https://bflix.to" class="t"><img src="https://logo.clearbit.com/hbo.com"><img src="https://image.tmdb.org/t/p/w500/7WsyChvnavnoUjs0oWpvuIqOS1x.jpg"><span>BFlix</span></a>
+            <a href="https://vumoo.to" class="t"><img src="https://logo.clearbit.com/vudu.com"><img src="https://logo.clearbit.com/vudu.com"><span>Vumoo</span></a>
+            <a href="https://tubitv.com" class="t"><img src="https://logo.clearbit.com/tubi.com"><img src="https://logo.clearbit.com/tubi.com"><span>Tubi TV</span></a>
+            <a href="https://pluto.tv" class="t"><img src="https://logo.clearbit.com/pluto.tv"><img src="https://logo.clearbit.com/pluto.tv"><span>Pluto TV</span></a>
+        </div>
+    </div>
+
+    <div class="rw">
+        <div class="rt">🏆 Live Sports</div>
+        <div class="tc">
+            <a href="https://thestreameast.to" class="t"><img src="https://logo.clearbit.com/espn.com"><img src="https://logo.clearbit.com/espn.com"><span>StreamEast</span></a>
+            <a href="https://nflbite.to" class="t"><img src="https://logo.clearbit.com/nfl.com"><img src="https://logo.clearbit.com/nfl.com"><span>NFL Bite</span></a>
+            <a href="https://nbabite.to" class="t"><img src="https://logo.clearbit.com/nba.com"><img src="https://logo.clearbit.com/nba.com"><span>NBA Bite</span></a>
+            <a href="https://methstreams.com" class="t"><img src="https://logo.clearbit.com/foxsports.com"><img src="https://logo.clearbit.com/foxsports.com"><span>Meth Streams</span></a>
+            <a href="https://vipleague.im" class="t"><span>VIP League</span></a>
+        </div>
+    </div>
+
+    <div class="rw">
+        <div class="rt">👶 Family & Kids</div>
+        <div class="tc">
+            <a href="https://pbskids.org" class="t"><img src="https://logo.clearbit.com/pbs.org"><img src="https://logo.clearbit.com/pbs.org"><span>PBS Kids</span></a>
+            <a href="https://youtube.com/kids" class="t"><img src="https://logo.clearbit.com/youtube.com"><img src="https://logo.clearbit.com/youtube.com"><span>YT Kids</span></a>
+            <a href="https://kids.nationalgeographic.com" class="t"><span>Nat Geo Kids</span></a>
+        </div>
+    </div>
+
+    <div class="rw">
+        <div class="rt">⛩️ Anime & Retro</div>
+        <div class="tc">
+            <a href="https://www.crunchyroll.com" class="t"><img src="https://logo.clearbit.com/crunchyroll.com"><span>Crunchyroll</span></a>
+            <a href="https://www.retrocrush.tv" class="t"><span>RetroCrush</span></a>
+            <a href="https://aniwatchtv.to" class="t"><span>Aniwatch</span></a>
+        </div>
+    </div>
+
+    <div class="rw">
+        <div class="rt">👻 The Ghost Mirrors</div>
+        <div class="tc">
+            <a href="https://vidsrc.to" class="t"><img src="https://logo.clearbit.com/plex.tv"><img src="https://logo.clearbit.com/plex.tv"><span>VidSrc Pro</span></a>
+            <a href="https://myflixer.to" class="t"><span>MyFlixer</span></a>
+            <a href="https://soap2day.ac" class="t"><span>Soap2Day</span></a>
+            <a href="https://m4uhd.tv" class="t"><span>M4UHD</span></a>
+        </div>
+    </div>
+
+    <div class="rw">
+        <div class="rt">🛠️ The Rescue Kit</div>
+        <div class="tc">
+            <a href="https://fmhy.net" class="t"><span>FMHY Guide</span></a>
+            <a href="https://web.whatsapp.com" class="t"><img src="https://logo.clearbit.com/whatsapp.com"><span>WhatsApp</span></a>
+            <a href="https://www.speedtest.net" class="t"><img src="https://logo.clearbit.com/speedtest.net"><span>Speed Test</span></a>
+        </div>
+    </div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            document.getElementById('clk').innerText = now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', second:'2-digit'});
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</body>
+</html>
+
