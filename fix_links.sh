@@ -1,0 +1,42 @@
+#!/bin/bash
+FILE="/home/theland/monster_system/active_index.html"
+
+# REPLACE LOGIC: "Old Link" "New Link" "Display Name"
+# Example: If Cineby is down, we swap it for Braflixtv
+replace_link() {
+    sed -i "s|href=\".*\" class=\"t poster\"><span>$1</span>|href=\"$2\" class=\"t poster\"><span>$3</span>|g" "$FILE"
+    echo "✅ Replaced $1 with $3"
+}
+
+echo "🛠️ Starting GOSTREAMER Repair..."
+# --- SPORTS REPAIR BLOCK - MARCH 2026 ---
+
+# Replaces NFL Bite with its most active mirror
+replace_link "NFL BITE" "https://reddit.nflbite.com" "NFL BITE 2026"
+
+# Replaces NBA Bite
+replace_link "NBA BITE" "https://nbabite.to" "NBA BITE LIVE"
+
+# Replaces Meth Streams (Now uses the .cx mirror)
+replace_link "METH STREAMS" "https://methstreams.cx" "METH STREAMS HD"
+
+# Replaces Sports Hub (Using the .stream or .fan mirror)
+replace_link "SPORTS HUB" "https://sportshub.stream" "SPORTS HUB PRO"
+
+# Replaces 65 Sports (Swapping for SportSurge, which is more stable right now)
+replace_link "65 STREAMS" "https://sportsurge.net" "SPORTSURGE"
+
+# Bonus: If everything else fails, this is the ultimate aggregator
+replace_link "SPORTS BACKUP" "https://crackstreams.biz" "CRACKSTREAMS"o
+
+# --- EDIT THESE LINES WHEN SITES DIE ---
+# replace_link "OLD_NAME" "NEW_URL" "NEW_NAME"
+
+replace_link "CINEBY" "https://www.braflix.video" "BRAFLIX"
+replace_link "FMOVIES" "https://vidsrc.to" "VIDSRC"
+replace_link "SOAP2DAY" "https://soap2day.ac" "SOAP2DAY HD"
+
+# ---------------------------------------
+
+echo "🚀 Repair Complete! Running Cloud Sync..."
+/home/theland/monster_system/save_build.sh
