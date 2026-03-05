@@ -1,116 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>GOSTREAMER</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GOSTREAMER Monster OS</title>
 <style>
- :root { --n: #39FF14; }
- body { 
-  background: #000; 
-  color: #fff; 
-  font-family: sans-serif; 
-  padding: 20px; 
- }
- .hdr { 
-  border-bottom: 2px solid var(--n); 
-  margin-bottom: 30px; 
-  display: flex; 
-  justify-content: space-between; 
- }
- .hdr h1 { color: var(--n); }
- .rw { margin-bottom: 40px; }
- .rt { 
-  border-left: 5px solid var(--n); 
-  padding-left: 10px; 
-  margin-bottom: 15px; 
-  font-weight: bold; 
- }
- .tc { 
-  display: grid; 
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-  gap: 20px; 
- }
- .t { 
-  background: #111; 
-  border: 1px solid #222; 
-  border-radius: 10px; 
-  text-decoration: none; 
-  aspect-ratio: 16/9; 
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  justify-content: center; 
-  overflow: hidden; 
-  position: relative; 
- }
- .t:hover { 
-  border-color: var(--n); 
-  transform: scale(1.05); 
- }
- .t img { 
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover; 
- }
- .t span { 
-  position: absolute; 
-  bottom: 5px; 
-  background: rgba(0,0,0,0.8); 
-  color: #fff; 
-  font-size: 10px; 
-  padding: 2px 5px; 
- }
+    /* 1. THE FOUNDATION */
+    body {
+        background: url('img/bg.jpeg') no-repeat center center fixed;
+        background-size: cover;
+        background-color: #050505;
+        color: #ffffff;
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 40px;
+        overflow-x: hidden;
+    }
+
+    /* 2. THE HEADER (Better than Superbox) */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(57, 255, 20, 0.2);
+    }
+
+    .brand { display: flex; align-items: center; }
+    .brand img { height: 70px; filter: drop-shadow(0 0 10px #39FF14); margin-right: 20px; }
+    .brand h1 { font-size: 42px; margin: 0; letter-spacing: 3px; color: #39FF14; text-transform: uppercase; }
+
+    /* 3. THE ROWS */
+    .row { margin-bottom: 45px; }
+    .row-title {
+        font-size: 26px;
+        color: #39FF14;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+    }
+    .row-title::before {
+        content: "";
+        display: inline-block;
+        width: 5px;
+        height: 25px;
+        background: #39FF14;
+        margin-right: 15px;
+        box-shadow: 0 0 10px #39FF14;
+    }
+
+    /* 4. THE BLOCKS (The Fire Stick Killer) */
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    .block {
+        position: relative;
+        text-decoration: none;
+        color: white;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .block img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 12px;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    /* THE MONSTER HOVER GLOW */
+    .block:hover {
+        transform: scale(1.08) translateY(-10px);
+        z-index: 10;
+    }
+
+    .block:hover img {
+        border-color: #39FF14;
+        box-shadow: 0 0 30px rgba(57, 255, 20, 0.6);
+    }
+
+    .block span {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        opacity: 0.8;
+    }
+
+    .block:hover span {
+        color: #39FF14;
+        opacity: 1;
+        text-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
+    }
+
 </style>
 </head>
 <body>
-<div class="hdr">
- <h1>GOSTREAMER</h1>
- <div id="clk"></div>
-</div>
 
-<div class="rw">
- <div class="rt">🎬 PREMIUM CINEMA</div>
- <div class="tc">
-  <a href="https://cineby.gd" class="t">
-   <img src="img/poster1.jpg">
-   <span>CINEBY</span>
-  </a>
-  <a href="https://hdtoday.tv" class="t">
-   <img src="img/poster2.jpg">
-   <span>HD TODAY</span>
-  </a>
-  <a href="https://bflix.to" class="t">
-   <img src="img/poster4.jpg">
-   <span>BFLIX</span>
-  </a>
-  <a href="https://vumoo.to" class="t">
-   <img src="img/poster3.jpg">
-   <span>VUMOO</span>
-  </a>
- </div>
-</div>
+    <div class="header">
+        <div class="brand">
+            <img src="img/logo.png" alt="Logo">
+            <h1>GOSTREAMER</h1>
+        </div>
+        <div id="clock" style="font-size: 28px; font-weight: bold; color: #39FF14;"></div>
+    </div>
 
-<div class="rw">
- <div class="rt">🏆 LIVE SPORTS</div>
- <div class="tc">
-  <a href="https://thestreameast.to" class="t">
-   <img src="img/espn.png" style="object-fit:contain">
-   <span>ESPN</span>
-  </a>
-  <a href="https://nflbite.to" class="t">
-   <img src="img/nfl.png" style="object-fit:contain">
-   <span>NFL BITE</span>
-  </a>
-  <a href="https://nbabite.to" class="t">
-   <img src="img/nba.png" style="object-fit:contain">
-   <span>NBA BITE</span>
-  </a>
- </div>
-</div>
+    <div class="row">
+        <div class="row-title">Premium Cinema</div>
+        <div class="container">
+            <a href="https://cineby.gd" class="block">
+                <img src="img/movieposter1.jpeg"><span>CINEBY</span>
+            </a>
+            <a href="https://hdtoday.tv" class="block">
+                <img src="img/movieposter2.jpeg"><span>HD TODAY</span>
+            </a>
+            <a href="https://bflix.to" class="block">
+                <img src="img/movieposter3.jpeg"><span>BFLIX</span>
+            </a>
+            <a href="https://vidsrc.to" class="block">
+                <img src="img/movieposter4.jpeg"><span>VIDSRC</span>
+            </a>
+        </div>
+    </div>
 
-<script>
- setInterval(() => { 
-  document.getElementById('clk').innerText = new Date().toLocaleTimeString(); 
- }, 1000);
-</script>
+    <div class="row">
+        <div class="row-title">Pro Sports Central</div>
+        <div class="container">
+            <a href="https://thestreameast.to" class="block">
+                <img src="img/sports1.jpeg"><span>STREAMEAST</span>
+            </a>
+            <a href="https://methstreams.com" class="block">
+                <img src="img/sports2.jpeg"><span>METH STREAMS</span>
+            </a>
+            <a href="https://vipleague.im" class="block">
+                <img src="img/sports3.jpeg"><span>VIP LEAGUE</span>
+            </a>
+            <a href="https://sportshub.fan" class="block">
+                <img src="img/sportsposter4.jpeg"><span>SPORTS HUB</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // LIVE SYSTEM CLOCK
+        function updateClock() {
+            const now = new Date();
+            document.getElementById('clock').innerText = now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+
 </body>
 </html>
