@@ -4,50 +4,40 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { background: #000 !important; color: white; font-family: sans-serif; padding: 25px; overflow-y: auto; scroll-behavior: smooth; min-height: 100vh; }
-        
         .header { display: flex; justify-content: space-between; align-items: center; border: 3px solid #39FF14; padding: 15px; border-radius: 15px; margin-bottom: 25px; background: rgba(57, 255, 20, 0.05); }
         #clock { font-size: 42px; color: #39FF14; font-weight: bold; text-shadow: 0 0 10px #39FF14; }
-        
         .search-container { margin-bottom: 35px; text-align: center; }
         .search-container input { width: 65%; padding: 18px; border-radius: 35px; border: 3px solid #39FF14; background: #111; color: white; font-size: 20px; outline: none; box-shadow: 0 0 15px rgba(57, 255, 20, 0.3); }
-
         .row-title { color: #39FF14; font-size: 24px; margin-bottom: 18px; font-weight: bold; text-transform: uppercase; border-left: 6px solid #39FF14; padding-left: 12px; }
         .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin-bottom: 45px; }
-
         .block {
             display: flex; flex-direction: column; justify-content: flex-end; align-items: center;
             aspect-ratio: 16 / 9; background-color: #0a0a0a; border: 3px solid #39FF14; border-radius: 18px;
             text-decoration: none; overflow: hidden; transition: 0.3s;
-            background-repeat: no-repeat; background-position: center 35%; background-size: 50% auto;
+            background-repeat: no-repeat; background-position: center 35%; background-size: 45% auto;
         }
-        .block:hover { transform: scale(1.06); box-shadow: 0 0 30px #39FF14; border-color: #fff; background-color: #000; }
+        .block:hover { transform: scale(1.06); box-shadow: 0 0 30px #39FF14; border-color: #fff; }
         .block span { width: 100%; background: rgba(0, 0, 0, 0.95); color: #39FF14; padding: 12px 0; text-align: center; font-weight: bold; font-size: 18px; border-top: 1px solid #39FF14; }
-
-        /* FLOATING NAVIGATION */
-        #topBtn { position: fixed; bottom: 25px; right: 25px; background: #39FF14; color: #000; border: none; border-radius: 50%; width: 55px; height: 55px; font-size: 28px; font-weight: bold; cursor: pointer; display: none; z-index: 1000; box-shadow: 0 0 15px #39FF14; }
-        #homeBtn { position: fixed; bottom: 25px; left: 25px; background: #39FF14; color: #000; border: none; border-radius: 12px; padding: 12px 25px; font-weight: bold; font-size: 18px; cursor: pointer; z-index: 1000; text-decoration: none; box-shadow: 0 0 15px #39FF14; }
-
-        ::-webkit-scrollbar { width: 12px; }
-        ::-webkit-scrollbar-track { background: #000; }
-        ::-webkit-scrollbar-thumb { background: #39FF14; border-radius: 10px; border: 2px solid #000; }
+        
+        /* THE STUCK-FREE HOME BUTTON */
+        #homeBtn { position: fixed; bottom: 25px; left: 25px; background: #39FF14; color: #000; border: none; border-radius: 12px; padding: 15px 30px; font-weight: bold; font-size: 20px; cursor: pointer; z-index: 9999; text-decoration: none; box-shadow: 0 0 20px #39FF14; }
+        #topBtn { position: fixed; bottom: 25px; right: 25px; background: #39FF14; color: #000; border: none; border-radius: 50%; width: 60px; height: 60px; font-size: 30px; font-weight: bold; cursor: pointer; display: none; z-index: 9999; box-shadow: 0 0 20px #39FF14; }
     </style>
 </head>
-<body id="top-anchor">
+<body>
     <div class="header">
-        <div style="color: #39FF14; font-size: 30px; font-weight: bold; letter-spacing: 1px;">GOSTREAMER MONSTER OS</div>
+        <div style="color: #39FF14; font-size: 30px; font-weight: bold;">GOSTREAMER MONSTER OS</div>
         <div id="clock"></div>
     </div>
-
     <div class="search-container">
         <form action="https://duckduckgo.com/" method="get">
-            <input type="text" name="q" placeholder="Search the web with DuckDuckGo..." autofocus>
+            <input type="text" name="q" placeholder="Search the web...">
         </form>
     </div>
-
-    <a href="#" id="homeBtn" onclick="location.reload()">HOME</a>
+    <a href="active_index.html" id="homeBtn">HOME</a>
     <button id="topBtn" onclick="window.scrollTo(0,0)">↑</button>
 <div class='row-title'>🎬 Premium Movies</div><div class='grid'>
-<a href='https://cineby.gd' class='block' style="background-image: url('https://www.cineby.app/logo.png');"><span>CINEBY</span></a>
+<a href='https://cineby.gd' class='block' style="background-image: url('https://static.wixstatic.com/media/9d030c_4c7f0b5d564e40269f8c6799015c7e14~mv2.png');"><span>CINEBY</span></a>
 <a href='https://xprime.today' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f1/Prime_Video.png');"><span>XPRIME</span></a>
 <a href='https://nepu.to/movies' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg');"><span>NEPU</span></a>
 <a href='https://flixhq.to/home' class='block' style="background-image: url('https://flixhq.to/images/group_1/theme_1/logo.png');"><span>FLIX HQ</span></a>
@@ -58,23 +48,39 @@
 <a href='https://play.xumo.com/live-guide' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5e/Xumo_logo.svg');"><span>XUMO PLAY</span></a>
 <a href='https://www.sling.com/guide' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Sling_TV_logo.svg');"><span>SLING FREE</span></a>
 </div>
+<div class='row-title'>📱 Social Media</div><div class='grid'>
+<a href='https://facebook.com' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg');"><span>FACEBOOK</span></a>
+<a href='https://web.whatsapp.com' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg');"><span>WHATSAPP</span></a>
+<a href='https://instagram.com' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg');"><span>INSTAGRAM</span></a>
+<a href='https://tiktok.com' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/34/Ionicons_logo-tiktok.svg');"><span>TIKTOK</span></a>
+<a href='https://web.snapchat.com' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Snapchat_logo.svg');"><span>SNAPCHAT</span></a>
+<a href='https://x.com' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg');"><span>X / TWITTER</span></a>
+<a href='https://pinterest.com' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png');"><span>PINTEREST</span></a>
+<a href='https://reddit.com' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/07/Reddit_icon.svg');"><span>REDDIT</span></a>
+<a href='https://linkedin.com' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg');"><span>LINKEDIN</span></a>
+<a href='https://discord.com' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/73/Discord_Color_Text_Logo_2022.svg');"><span>DISCORD</span></a>
+<a href='https://twitch.tv' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d3/Twitch_logo.svg');"><span>TWITCH</span></a>
+<a href='https://threads.net' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9d/Threads-logo-black.png');"><span>THREADS</span></a>
+<a href='https://quora.com' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/91/Quora_icon.svg');"><span>QUORA</span></a>
+<a href='https://tumblr.com' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/43/Tumblr.svg');"><span>TUMBLR</span></a>
+<a href='https://bereal.com' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b3/BeReal_logo.png');"><span>BEREAL</span></a>
+</div>
 <div class='row-title'>📰 Local News</div><div class='grid'>
-<a href='https://www.haystack.tv/local-news' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e1/Haystack_News_Logo.png');"><span>HAYSTACK</span></a>
+<a href='https://www.haystack.tv' class='block' style="background-image: url('https://play-lh.googleusercontent.com/9783F4X_4iXvXN5qf7-B7-bL7x6eA6uY0F5X9_v_oE');"><span>HAYSTACK</span></a>
 <a href='https://localnow.com' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/05/Local_Now_logo.svg');"><span>LOCAL NOW</span></a>
 <a href='https://www.cbsnews.com/live/' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/19/CBS_News_logo_2020.svg');"><span>CBS NEWS</span></a>
+<a href='https://abcnews.go.com/Live' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/34/ABC_News_logo_2021.svg');"><span>ABC NEWS</span></a>
+<a href='https://www.nbcnews.com/now' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2f/NBC_News_2013_logo.svg');"><span>NBC NEWS</span></a>
 </div>
 <div class='row-title'>🎵 Music & Radio</div><div class='grid'>
 <a href='https://open.spotify.com' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_with_text.svg');"><span>SPOTIFY</span></a>
-<a href='https://radio.garden' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/60/Radio_Garden_logo.png');"><span>RADIO GARDEN</span></a>
+<a href='https://www.pandora.com' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/24/Pandora_logo_2016.svg');"><span>PANDORA</span></a>
 <a href='https://music.youtube.com' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6a/Youtube_Music_icon.svg');"><span>YT MUSIC</span></a>
+<a href='https://www.iheart.com' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c3/IHeartRadio_logo.svg');"><span>IHEART RADIO</span></a>
+<a href='https://radio.garden' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Radio_Garden_logo.png/250px-Radio_Garden_logo.png');"><span>RADIO GARDEN</span></a>
 </div>
 <div class='row-title'>🏈 Live Sports</div><div class='grid'>
 <a href='https://thetvapp.to' class='block' style="background-image: url('https://thetvapp.to/images/logo.png');"><span>TV APP</span></a>
-</div>
-<div class='row-title'>📱 Social Media</div><div class='grid'>
-<a href='https://facebook.com' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg');"><span>FACEBOOK</span></a>
-<a href='https://tiktok.com' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/34/Ionicons_logo-tiktok.svg');"><span>TIKTOK</span></a>
-<a href='https://x.com' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg');"><span>X / TWITTER</span></a>
 </div>
 <div class='row-title'>🛠️ System Tools</div><div class='grid'>
 <a href='https://www.speedtest.net' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b6/Speedtest_logo.svg');"><span>SPEED TEST</span></a>
@@ -88,14 +94,9 @@
             document.getElementById('clock').innerText = now.toLocaleTimeString([], options); 
         }
         setInterval(updateClock, 1000); updateClock();
-
         window.onscroll = function() {
             let btn = document.getElementById("topBtn");
-            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-                btn.style.display = "block";
-            } else {
-                btn.style.display = "none";
-            }
+            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) { btn.style.display = "block"; } else { btn.style.display = "none"; }
         };
     </script>
 </body>

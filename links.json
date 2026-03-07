@@ -1,6 +1,6 @@
 {
   "movies": [
-    {"name": "CINEBY", "url": "https://cineby.gd", "img": "https://www.cineby.app/logo.png"},
+    {"name": "CINEBY", "url": "https://cineby.gd", "img": "https://static.wixstatic.com/media/9d030c_4c7f0b5d564e40269f8c6799015c7e14~mv2.png"},
     {"name": "XPRIME", "url": "https://xprime.today", "img": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Prime_Video.png"},
     {"name": "NEPU", "url": "https://nepu.to/movies", "img": "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"},
     {"name": "FLIX HQ", "url": "https://flixhq.to/home", "img": "https://flixhq.to/images/group_1/theme_1/logo.png"}
@@ -11,23 +11,39 @@
     {"name": "XUMO PLAY", "url": "https://play.xumo.com/live-guide", "img": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Xumo_logo.svg"},
     {"name": "SLING FREE", "url": "https://www.sling.com/guide", "img": "https://upload.wikimedia.org/wikipedia/commons/5/53/Sling_TV_logo.svg"}
   ],
+  "social": [
+    {"name": "FACEBOOK", "url": "https://facebook.com", "img": "https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg"},
+    {"name": "WHATSAPP", "url": "https://web.whatsapp.com", "img": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"},
+    {"name": "INSTAGRAM", "url": "https://instagram.com", "img": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"},
+    {"name": "TIKTOK", "url": "https://tiktok.com", "img": "https://upload.wikimedia.org/wikipedia/commons/3/34/Ionicons_logo-tiktok.svg"},
+    {"name": "SNAPCHAT", "url": "https://web.snapchat.com", "img": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Snapchat_logo.svg"},
+    {"name": "X / TWITTER", "url": "https://x.com", "img": "https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg"},
+    {"name": "PINTEREST", "url": "https://pinterest.com", "img": "https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png"},
+    {"name": "REDDIT", "url": "https://reddit.com", "img": "https://upload.wikimedia.org/wikipedia/commons/0/07/Reddit_icon.svg"},
+    {"name": "LINKEDIN", "url": "https://linkedin.com", "img": "https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"},
+    {"name": "DISCORD", "url": "https://discord.com", "img": "https://upload.wikimedia.org/wikipedia/commons/7/73/Discord_Color_Text_Logo_2022.svg"},
+    {"name": "TWITCH", "url": "https://twitch.tv", "img": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Twitch_logo.svg"},
+    {"name": "THREADS", "url": "https://threads.net", "img": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Threads-logo-black.png"},
+    {"name": "QUORA", "url": "https://quora.com", "img": "https://upload.wikimedia.org/wikipedia/commons/9/91/Quora_icon.svg"},
+    {"name": "TUMBLR", "url": "https://tumblr.com", "img": "https://upload.wikimedia.org/wikipedia/commons/4/43/Tumblr.svg"},
+    {"name": "BEREAL", "url": "https://bereal.com", "img": "https://upload.wikimedia.org/wikipedia/commons/b/b3/BeReal_logo.png"}
+  ],
   "news": [
-    {"name": "HAYSTACK", "url": "https://www.haystack.tv/local-news", "img": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Haystack_News_Logo.png"},
+    {"name": "HAYSTACK", "url": "https://www.haystack.tv", "img": "https://play-lh.googleusercontent.com/9783F4X_4iXvXN5qf7-B7-bL7x6eA6uY0F5X9_v_oE"},
     {"name": "LOCAL NOW", "url": "https://localnow.com", "img": "https://upload.wikimedia.org/wikipedia/commons/0/05/Local_Now_logo.svg"},
-    {"name": "CBS NEWS", "url": "https://www.cbsnews.com/live/", "img": "https://upload.wikimedia.org/wikipedia/commons/1/19/CBS_News_logo_2020.svg"}
+    {"name": "CBS NEWS", "url": "https://www.cbsnews.com/live/", "img": "https://upload.wikimedia.org/wikipedia/commons/1/19/CBS_News_logo_2020.svg"},
+    {"name": "ABC NEWS", "url": "https://abcnews.go.com/Live", "img": "https://upload.wikimedia.org/wikipedia/commons/3/34/ABC_News_logo_2021.svg"},
+    {"name": "NBC NEWS", "url": "https://www.nbcnews.com/now", "img": "https://upload.wikimedia.org/wikipedia/commons/2/2f/NBC_News_2013_logo.svg"}
   ],
   "music": [
     {"name": "SPOTIFY", "url": "https://open.spotify.com", "img": "https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_with_text.svg"},
-    {"name": "RADIO GARDEN", "url": "https://radio.garden", "img": "https://upload.wikimedia.org/wikipedia/commons/6/60/Radio_Garden_logo.png"},
-    {"name": "YT MUSIC", "url": "https://music.youtube.com", "img": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Youtube_Music_icon.svg"}
+    {"name": "PANDORA", "url": "https://www.pandora.com", "img": "https://upload.wikimedia.org/wikipedia/commons/2/24/Pandora_logo_2016.svg"},
+    {"name": "YT MUSIC", "url": "https://music.youtube.com", "img": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Youtube_Music_icon.svg"},
+    {"name": "IHEART RADIO", "url": "https://www.iheart.com", "img": "https://upload.wikimedia.org/wikipedia/commons/c/c3/IHeartRadio_logo.svg"},
+    {"name": "RADIO GARDEN", "url": "https://radio.garden", "img": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Radio_Garden_logo.png/250px-Radio_Garden_logo.png"}
   ],
   "sports": [
     {"name": "TV APP", "url": "https://thetvapp.to", "img": "https://thetvapp.to/images/logo.png"}
-  ],
-  "social": [
-    {"name": "FACEBOOK", "url": "https://facebook.com", "img": "https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg"},
-    {"name": "TIKTOK", "url": "https://tiktok.com", "img": "https://upload.wikimedia.org/wikipedia/commons/3/34/Ionicons_logo-tiktok.svg"},
-    {"name": "X / TWITTER", "url": "https://x.com", "img": "https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg"}
   ],
   "system": [
     {"name": "SPEED TEST", "url": "https://www.speedtest.net", "img": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Speedtest_logo.svg"},
