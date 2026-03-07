@@ -2,70 +2,59 @@
 TARGET="/home/theland/monster_system/active_index.html"
 JSON="/home/theland/monster_system/links.json"
 
-# Write the HTML Head
+# Write HTML Header with CSS
 cat << 'EOF' > $TARGET
 <!DOCTYPE html>
 <html>
 <head>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #000 !important; color: white; font-family: sans-serif; padding: 25px; overflow-y: auto; scroll-behavior: smooth; min-height: 100vh; }
         
-        /* 📜 ENABLE SCROLLING */
-        body { 
-            background: #000 !important; 
-            color: white; 
-            font-family: sans-serif; 
-            padding: 20px; 
-            overflow-y: auto; /* Allows up/down scrolling */
-            min-height: 100vh;
-        }
-
-        /* 🕰️ HEADER & CLOCK */
-        .header { display: flex; justify-content: space-between; align-items: center; border: 3px solid #39FF14; padding: 15px; border-radius: 15px; margin-bottom: 20px; background: rgba(57, 255, 20, 0.05); }
-        #clock { font-size: 40px; color: #39FF14; font-weight: bold; text-shadow: 0 0 10px #39FF14; }
+        .header { display: flex; justify-content: space-between; align-items: center; border: 3px solid #39FF14; padding: 15px; border-radius: 15px; margin-bottom: 25px; background: rgba(57, 255, 20, 0.05); }
+        #clock { font-size: 42px; color: #39FF14; font-weight: bold; text-shadow: 0 0 10px #39FF14; }
         
-        /* 🔍 DUCKDUCKGO SEARCH */
-        .search-container { margin-bottom: 30px; text-align: center; }
-        .search-container input { width: 60%; padding: 15px; border-radius: 30px; border: 2px solid #39FF14; background: #111; color: white; font-size: 18px; outline: none; }
+        .search-container { margin-bottom: 35px; text-align: center; }
+        .search-container input { width: 65%; padding: 18px; border-radius: 35px; border: 3px solid #39FF14; background: #111; color: white; font-size: 20px; outline: none; box-shadow: 0 0 15px rgba(57, 255, 20, 0.3); }
 
-        /* 📦 GRID: MAX 3 PER ROW */
-        .row-title { color: #39FF14; font-size: 22px; margin-bottom: 15px; font-weight: bold; text-transform: uppercase; border-left: 5px solid #39FF14; padding-left: 10px; }
-        .grid { 
-            display: grid; 
-            grid-template-columns: repeat(3, 1fr); /* FORCES 3 MAX */
-            gap: 20px; 
-            margin-bottom: 40px; 
-        }
+        .row-title { color: #39FF14; font-size: 24px; margin-bottom: 18px; font-weight: bold; text-transform: uppercase; border-left: 6px solid #39FF14; padding-left: 12px; }
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin-bottom: 45px; }
 
         .block {
             display: flex; flex-direction: column; justify-content: flex-end; align-items: center;
-            aspect-ratio: 16 / 9; background-color: #0a0a0a; border: 3px solid #39FF14; border-radius: 15px;
+            aspect-ratio: 16 / 9; background-color: #0a0a0a; border: 3px solid #39FF14; border-radius: 18px;
             text-decoration: none; overflow: hidden; transition: 0.3s;
-            background-repeat: no-repeat; background-position: center 40%; background-size: 60% auto;
+            background-repeat: no-repeat; background-position: center 35%; background-size: 50% auto;
         }
-        .block:hover { transform: scale(1.05); box-shadow: 0 0 25px #39FF14; border-color: #fff; }
-        .block span { width: 100%; background: rgba(0, 0, 0, 0.9); color: #39FF14; padding: 10px 0; text-align: center; font-weight: bold; font-size: 18px; border-top: 1px solid #39FF14; }
-        
-        /* Custom Scrollbar to match Monster Green */
-        ::-webkit-scrollbar { width: 10px; }
+        .block:hover { transform: scale(1.06); box-shadow: 0 0 30px #39FF14; border-color: #fff; background-color: #000; }
+        .block span { width: 100%; background: rgba(0, 0, 0, 0.95); color: #39FF14; padding: 12px 0; text-align: center; font-weight: bold; font-size: 18px; border-top: 1px solid #39FF14; }
+
+        /* FLOATING NAVIGATION */
+        #topBtn { position: fixed; bottom: 25px; right: 25px; background: #39FF14; color: #000; border: none; border-radius: 50%; width: 55px; height: 55px; font-size: 28px; font-weight: bold; cursor: pointer; display: none; z-index: 1000; box-shadow: 0 0 15px #39FF14; }
+        #homeBtn { position: fixed; bottom: 25px; left: 25px; background: #39FF14; color: #000; border: none; border-radius: 12px; padding: 12px 25px; font-weight: bold; font-size: 18px; cursor: pointer; z-index: 1000; text-decoration: none; box-shadow: 0 0 15px #39FF14; }
+
+        ::-webkit-scrollbar { width: 12px; }
         ::-webkit-scrollbar-track { background: #000; }
-        ::-webkit-scrollbar-thumb { background: #39FF14; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb { background: #39FF14; border-radius: 10px; border: 2px solid #000; }
     </style>
 </head>
-<body>
+<body id="top-anchor">
     <div class="header">
-        <div style="color: #39FF14; font-size: 26px; font-weight: bold;">GOSTREAMER MONSTER OS</div>
+        <div style="color: #39FF14; font-size: 30px; font-weight: bold; letter-spacing: 1px;">GOSTREAMER MONSTER OS</div>
         <div id="clock"></div>
     </div>
 
     <div class="search-container">
         <form action="https://duckduckgo.com/" method="get">
-            <input type="text" name="q" placeholder="Search the web with DuckDuckGo...">
+            <input type="text" name="q" placeholder="Search the web with DuckDuckGo..." autofocus>
         </form>
     </div>
+
+    <a href="#" id="homeBtn" onclick="location.reload()">HOME</a>
+    <button id="topBtn" onclick="window.scrollTo(0,0)">↑</button>
 EOF
 
-# Function to build rows automatically
+# Build Row Function
 build_section() {
     local label=$1
     local key=$2
@@ -79,12 +68,16 @@ build_section() {
     echo "</div>" >> $TARGET
 }
 
+# Generate Categories
 build_section "🎬 Premium Movies" "movies"
 build_section "📺 Live TV" "live_tv"
+build_section "📰 Local News" "news"
+build_section "🎵 Music & Radio" "music"
 build_section "🏈 Live Sports" "sports"
-build_section "🛰️ Entertainment" "entertainment"
+build_section "📱 Social Media" "social"
+build_section "🛠️ System Tools" "system"
 
-# Footer with 12-Hour Clock
+# Footer and Scripts
 cat << 'EOF' >> $TARGET
     <script>
         function updateClock() { 
@@ -93,8 +86,17 @@ cat << 'EOF' >> $TARGET
             document.getElementById('clock').innerText = now.toLocaleTimeString([], options); 
         }
         setInterval(updateClock, 1000); updateClock();
+
+        window.onscroll = function() {
+            let btn = document.getElementById("topBtn");
+            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
     </script>
 </body>
 </html>
 EOF
-echo "✅ Build Complete! Max 3 blocks per row + DuckDuckGo + Scrolling enabled."
+echo "✅ Final Monster Build Complete!"
