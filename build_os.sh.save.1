@@ -1,0 +1,85 @@
+/* THE BOX */
+        .block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #000 !important; /* Forces black base */
+            border: 3px solid #39FF14;
+            border-radius: 15px;
+            text-decoration: none;
+            overflow: hidden;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        .block:hover { transform: scale(1.05); box-shadow: 0 0 25px #39FF14; }
+
+        /* THE LOGO (Centering it and making it pop) */
+        .block img {
+            max-width: 70%;  /* Keeps logo from hitting edges */
+            max-height: 60%; 
+            object-fit: contain; /* Prevents stretching */
+            filter: drop-shadow(0 0 10px rgba(57, 255, 20, 0.5));
+        }
+
+        /* THE LABEL */
+        .block span {
+         /* 🌑 GLOBAL RESET: Kills white space around the screen */
+        body {
+            margin: 0 !important;
+            padding: 20px !important;
+            background: #000 !important; /* Forces total black background */
+            font-family: 'Segoe UI', sans-serif;
+            overflow: hidden; /* No scrollbars */
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* 🛰️ HEADER: Big Logo & Big Clock */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,0,0,0.8);
+            border: 2px solid #39FF14;
+            padding: 20px 40px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        #clock {
+            font-size: 50px; /* Big enough to read from the couch */
+            color: #39FF14;
+            font-weight: bold;
+            text-shadow: 0 0 15px rgba(57, 255, 20, 0.7);
+        }
+
+        /* 🔍 SEARCH BAR: DuckDuckGo style */
+        .search-area {
+            flex-grow: 1;
+            margin: 0 40px;
+        }
+
+        .search-input {
+            width: 100%;
+            background: #111;
+            border: 2px solid #39FF14;
+            padding: 12px 25px;
+            border-radius: 50px;
+            color: white;
+            font-size: 18px;
+            outline: none;
+        }   position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(57, 255, 20, 0.1); /* Subtle green tint */
+            color: #39FF14;
+            padding: 12px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            border-top: 1px solid #39FF14;
+        }

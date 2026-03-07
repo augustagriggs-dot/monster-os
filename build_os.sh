@@ -1,3 +1,9 @@
+#!/bin/bash
+TARGET="/home/theland/monster_system/active_index.html"
+JSON="/home/theland/monster_system/links.json"
+
+# Write the HTML Head
+cat << 'EOF' > $TARGET
 <!DOCTYPE html>
 <html>
 <head>
@@ -57,25 +63,29 @@
             <input type="text" name="q" placeholder="Search the web with DuckDuckGo...">
         </form>
     </div>
-<div class='row-title'>🎬 Premium Movies</div><div class='grid'>
-<a href='https://cineby.gd' class='block' style="background-image: url('https://www.cineby.app/logo.png');"><span>CINEBY</span></a>
-<a href='https://xprime.today' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f1/Prime_Video.png');"><span>XPRIME</span></a>
-<a href='https://nepu.to/movies' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg');"><span>NEPU</span></a>
-<a href='https://flixhq.to/home' class='block' style="background-image: url('https://flixhq.to/images/group_1/theme_1/logo.png');"><span>FLIX HQ</span></a>
-</div>
-<div class='row-title'>📺 Live TV</div><div class='grid'>
-<a href='https://pluto.tv/live-tv' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/af/Pluto_TV_logo.svg');"><span>PLUTO TV</span></a>
-<a href='https://www.plex.tv/watch-free-tv/' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a2/Plex_logo_2022.svg');"><span>PLEX</span></a>
-<a href='https://play.xumo.com/live-guide' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5e/Xumo_logo.svg');"><span>XUMO PLAY</span></a>
-<a href='https://www.sling.com/guide' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Sling_TV_logo.svg');"><span>SLING FREE</span></a>
-</div>
-<div class='row-title'>🏈 Live Sports</div><div class='grid'>
-<a href='https://thetvapp.to' class='block' style="background-image: url('https://thetvapp.to/images/logo.png');"><span>TV APP</span></a>
-</div>
-<div class='row-title'>🛰️ Entertainment</div><div class='grid'>
-<a href='https://youtube.com' class='block' style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg');"><span>YOUTUBE</span></a>
-<a href='https://weather.com' class='block' style="background-image: url('https://s.w-x.co/logo_twc.png');"><span>WEATHER</span></a>
-</div>
+EOF
+
+# Function to build rows automatically
+build_section() {
+    local label=$1
+    local key=$2
+    echo "<div class='row-title'>$label</div><div class='grid'>" >> $TARGET
+    jq -c ".$key[]" $JSON | while read -r item; do
+        name=$(echo "$item" | jq -r '.name')
+        url=$(echo "$item" | jq -r '.url')
+        img=$(echo "$item" | jq -r '.img')
+        echo "<a href='$url' class='block' style=\"background-image: url('$img');\"><span>$name</span></a>" >> $TARGET
+    done
+    echo "</div>" >> $TARGET
+}
+
+build_section "🎬 Premium Movies" "movies"
+build_section "📺 Live TV" "live_tv"
+build_section "🏈 Live Sports" "sports"
+build_section "🛰️ Entertainment" "entertainment"
+
+# Footer with 12-Hour Clock
+cat << 'EOF' >> $TARGET
     <script>
         function updateClock() { 
             const now = new Date(); 
@@ -86,3 +96,5 @@
     </script>
 </body>
 </html>
+EOF
+echo "✅ Build Complete! Max 3 blocks per row + DuckDuckGo + Scrolling enabled."

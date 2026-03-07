@@ -1,0 +1,65 @@
+{
+  "movies": [
+    {
+      "name": "CINEBY",
+      "url": "https://cineby.gd",
+      "img": "https://www.cineby.app/logo.png"
+    },
+    {
+      "name": "XPRIME",
+      "url": "https://xprime.today",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Prime_Video.png"
+    },
+    {
+      "name": "NEPU",
+      "url": "https://nepu.to/movies",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+    },
+    {
+      "name": "FLIX HQ",
+      "url": "https://flixhq.to/home",
+      "img": "https://flixhq.to/images/group_1/theme_1/logo.png"
+    }
+  ],
+  "live_tv": [
+    {
+      "name": "PLUTO TV",
+      "url": "https://pluto.tv/live-tv",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/a/af/Pluto_TV_logo.svg"
+    },
+    {
+      "name": "PLEX",
+      "url": "https://www.plex.tv/watch-free-tv/",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Plex_logo_2022.svg"
+    },
+    {
+      "name": "XUMO PLAY",
+      "url": "https://play.xumo.com/live-guide",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Xumo_logo.svg"
+    },
+    {
+      "name": "SLING FREE",
+      "url": "https://www.sling.com/guide",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/5/53/Sling_TV_logo.svg"
+    }
+  ],
+  "sports": [
+    {
+      "name": "TV APP",
+      "url": "https://thetvapp.to",
+      "img": "https://thetvapp.to/images/logo.png"
+    }
+  ],
+  "entertainment": [
+    {
+      "name": "YOUTUBE",
+      "url": "https://youtube.com",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg"
+    },
+    {
+      "name": "WEATHER",
+      "url": "https://weather.com",
+      "img": "https://s.w-x.co/logo_twc.png"
+    }
+  ]
+}

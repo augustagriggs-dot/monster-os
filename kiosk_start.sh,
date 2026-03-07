@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# 1. FIX FONT ERRORS
+export FONTCONFIG_PATH=/etc/fonts
+
+# 2. KILL GHOST PROCESSES
+pkill -f brave
+pkill -f unclutter
+sleep 1
+
+# 3. TRIPLE ZERO CACHE WIPE
+rm -rf ~/.config/BraveSoftware/Brave-Browser/Default/GPUCache
+rm -rf ~/.config/BraveSoftware/Brave-Browser/Default/Cache/*
+
+# 4. HIDE MOUSE CURSOR
+unclutter -idle 0.1 -root &
+
+# 5. LAUNCH GOSTREAMER - THE "PRO CODER" FLAGS
+# --disable-logging & --log-level=3: Stops the terminal error spam
+# --ignore-certificate-errors: Stops the SSL handshake failures
+# --force-device-scale-factor=1.0: Ensures everything fits your screen 1:1
+brave-browser --kiosk \
+    --no-first-run \
+    --simulate-outdated-no-au \
+    --disable-features=InProductHelp,OverlayScrollbar \
+    --disable-logging \
+    --log-level=3 \
+    --ignore-certificate-errors \
+    --start-maximized \
+    --force-device-scale-factor=1.0 \
+    --autoplay-policy=no-user-gesture-required \
+    --password-store=basic \
+    "file:///home/theland/monster_system/active_index.html" &
+
+echo "🚀 GOSTREAMER Monster OS is running in Silent Mode."

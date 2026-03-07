@@ -1,0 +1,9 @@
+{
+  "movies": [
+    {"name": "CINEBY", "url": "https://www.cineby.app/home", "img": "https://www.cineby.app/logo.png"},
+    {"name": "XPRIME", "url": "https://xprime.to/home", "img": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Prime_Video.png"},
+    {"name": "NEPU", "url": "https://nepu.to/movies", "img": "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"},
+    {"name": "FLIX HQ", "url": "https://flixhq.to/home", "img": "https://flixhq.to/images/group_1/theme_1/logo.png"}
+  ]
+}
+
