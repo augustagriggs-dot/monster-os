@@ -1,39 +1,11 @@
 #!/bin/bash
 
-# --- THE TOP-NOTCH MAINTENANCE ENGINE ---
-run_maintenance() {
-    echo -e "\n\e[32m[!] STARTING TRIPLE ZERO RESET...\e[0m"
-    
-    # 1. BRAVE & GPU DEEP CLEAN
-    echo "🧹 Deep Cleaning GPU & Browser Cache..."
-    rm -rf ~/.cache/BraveSoftware/Brave-Browser/Default/Cache/*
-    rm -rf ~/.cache/BraveSoftware/Brave-Browser/Default/Code\ Cache/*
-    rm -rf ~/.cache/BraveSoftware/Brave-Browser/Default/GPUCache/*
-    
-    # 2. SYSTEM LOG VACUUM (Prevents OS Bloat)
-    echo "⚡ Vacuuming System Logs (1 Day Retention)..."
-    sudo journalctl --vacuum-time=1d > /dev/null 2>&1
-
-    # 3. STORAGE GUARD (Cleans out old update junk)
-    echo "📦 Cleaning Up Old Update Files..."
-    sudo apt-get autoremove -y > /dev/null 2>&1
-    sudo apt-get clean > /dev/null 2>&1
-
-    # 4. REBUILD HTML (Ensures UI is fresh)
-    if [ -f /home/theland/monster_system/build_os.sh ]; then
-        /home/theland/monster_system/build_os.sh
-    fi
-
-    echo -e "\e[32m[✅] SYSTEM REFRESHED AND OPTIMIZED!\e[0m\n"
-}
-
-# --- THE MASTER MENU ---
 show_menu() {
     clear
     echo "=============================================="
     echo "    TRIPLE ZERO RESET - GOSTREAMER OS         "
     echo "=============================================="
-    echo "1) 🟢 TRIPLE ZERO RESET (Deep Cache & GPU Fix)"
+    echo "1) 🟢 TRIPLE ZERO RESET (Clean Cache & Fix Fit)"
     echo "2) 🚀 RESTART KIOSK (Kill Ghost Windows)"
     echo "3) ⚖️  SWITCH TO ATTORNEY BUILD"
     echo "4) 👾 SWITCH TO GOSTREAMER BUILD"
@@ -49,17 +21,27 @@ show_menu() {
 while true; do
     show_menu
     case $choice in
-        1) 
-            run_maintenance
-            read -p "Press Enter to return..."
+        
+            rm -rf ~/.cache/BraveSoftware/Brave-Browser/Default/Cache/*
+            /home/theland/monster_system/build_os.sh
+            echo "Triple Zero Reset Complete."
+            sleep 2
             ;;
         2) 
             pkill brave
             brave-browser --kiosk --app=file:///home/theland/monster_system/active_index.html &
             ;;
-        3) echo "Switching to ATTORNEY BUILD..."; sleep 1 ;;
-        4) echo "Switching to GOSTREAMER BUILD..."; sleep 1 ;;
-        5) nano /home/theland/monster_system/links.json ;;
+        3) 
+            echo "Switching to ATTORNEY BUILD..."
+            sleep 1
+            ;;
+        4) 
+            echo "Switching to GOSTREAMER BUILD..."
+            sleep 1
+            ;;
+        5) 
+            nano /home/theland/monster_system/links.json
+            ;;
         6) 
             cd /home/theland/monster_system
             git add .
@@ -68,6 +50,7 @@ while true; do
             read -p "Backup Done. Press Enter..."
             ;;
         7) 
+            # Check if sync script exists first
             if [ -f /home/theland/monster_system/sync_progress.sh ]; then
                 /home/theland/monster_system/sync_progress.sh
                 read -p "Gemini Sync Document Updated on Desktop! Press Enter..."
@@ -82,10 +65,15 @@ while true; do
             echo "1. Use ARROWS to navigate blocks."
             echo "2. Press ENTER to select a site."
             echo "3. Use 'HOME' button to return to the grid."
-            echo "4. Use Option 1 (Triple Zero) if video buffers."
+            echo "4. Search using the top bar for anything else."
             read -p "Press Enter to return..."
             ;;
-        q) exit 0 ;;
-        *) echo "Invalid option!" && sleep 1 ;;
+        q) 
+            exit 0 
+            ;;
+        *) 
+            echo "Invalid option!"
+            sleep 1
+            ;;
     esac
 done
