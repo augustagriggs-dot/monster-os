@@ -1,0 +1,79 @@
+#!/bin/bash
+
+show_menu() {
+    clear
+    echo "=============================================="
+    echo "    TRIPLE ZERO RESET - GOSTREAMER OS         "
+    echo "=============================================="
+    echo "1) 🟢 TRIPLE ZERO RESET (Clean Cache & Fix Fit)"
+    echo "2) 🚀 RESTART KIOSK (Kill Ghost Windows)"
+    echo "3) ⚖️  SWITCH TO ATTORNEY BUILD"
+    echo "4) 👾 SWITCH TO GOSTREAMER BUILD"
+    echo "5) 🛠️  EDIT BUILDER (Change Links/Labels)"
+    echo "6) 📤 PUSH TO GITHUB (Backup System)"
+    echo "7) 📝 SYNC PROGRESS (Gemini Desktop Doc)"
+    echo "8) 📖 VIEW USER MANUAL (Customer Instructions)"
+    echo "q) EXIT"
+    echo "=============================================="
+    read -p "Select an option: " choice
+}
+
+while true; do
+    show_menu
+    case $choice in
+        1) 
+            rm -rf ~/.cache/BraveSoftware/Brave-Browser/Default/Cache/*
+            /home/theland/monster_system/build_os.sh
+            echo "Triple Zero Reset Complete."
+            sleep 2
+            ;;
+        2) 
+            pkill brave
+            brave-browser --kiosk --app=file:///home/theland/monster_system/active_index.html &
+            ;;
+        3) 
+            echo "Switching to ATTORNEY BUILD..."
+            sleep 1
+            ;;
+        4) 
+            echo "Switching to GOSTREAMER BUILD..."
+            sleep 1
+            ;;
+        5) 
+            nano /home/theland/monster_system/links.json
+            ;;
+        6) 
+            cd /home/theland/monster_system
+            git add .
+            git commit -m "Monster Backup $(date)"
+            git push origin main
+            read -p "Backup Done. Press Enter..."
+            ;;
+        7) 
+            # Check if sync script exists first
+            if [ -f /home/theland/monster_system/sync_progress.sh ]; then
+                /home/theland/monster_system/sync_progress.sh
+                read -p "Gemini Sync Document Updated on Desktop! Press Enter..."
+            else
+                echo "Error: sync_progress.sh not found!"
+                sleep 2
+            fi
+            ;;
+        8)
+            clear
+            echo "--- GOSTREAMER MONSTER OS USER MANUAL ---"
+            echo "1. Use ARROWS to navigate blocks."
+            echo "2. Press ENTER to select a site."
+            echo "3. Use 'HOME' button to return to the grid."
+            echo "4. Search using the top bar for anything else."
+            read -p "Press Enter to return..."
+            ;;
+        q) 
+            exit 0 
+            ;;
+        *) 
+            echo "Invalid option!"
+            sleep 1
+            ;;
+    esac
+done
